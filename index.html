@@ -2,31 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IT Professional Portfolio</title>
+    <title>Shantiii | IT Professional</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="hero">
-        <h1>Shantiii</h1>
-        <p>IT Professional | Android & Web Developer</p>
-        <button onclick="scrollToSection()">Explore More</button>
-    </header>
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Vaibhavi Shinde</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- About -->
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Hello, I’m <span>Vaibhavi</span></h1>
+        <p>IT Professional • Android & Web Developer</p>
+        <button onclick="scrollDown()">Get Started</button>
+    </section>
+
+    <!-- ABOUT -->
     <section id="about" class="card">
-        <h2>👨‍💻 About Me</h2>
+        <h2>👩‍💻 About Me</h2>
         <p>
-            I am an IT professional passionate about building Android and web applications.
-            I enjoy working with modern technologies and creating clean, user-friendly designs.
+            I am an IT professional passionate about technology, design,
+            and building real-world applications using modern tools.
         </p>
     </section>
 
-    <!-- Skills -->
-    <section class="card">
+    <!-- SKILLS -->
+    <section id="skills" class="card">
         <h2>🛠 Skills</h2>
-        <div class="skills">
+        <div class="skill-box">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
@@ -35,26 +46,26 @@
         </div>
     </section>
 
-    <!-- Projects -->
-    <section class="card">
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
         <h2>📂 Projects</h2>
-        <ul>
-            <li>📱 Android Booking App</li>
-            <li>🔥 Firebase Authentication System</li>
-            <li>🌐 Personal Portfolio Website</li>
-        </ul>
+        <div class="projects">
+            <div class="project">Android Booking App</div>
+            <div class="project">Firebase Login System</div>
+            <div class="project">Portfolio Website</div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section class="card contact">
-        <h2>📞 Contact Me</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="card contact">
+        <h2>📞 Contact</h2>
         <button onclick="showMessage()">Say Hello</button>
         <p id="msg"></p>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 | Designed by Shantiii</p>
+        <p>© 2026 Shantiii | IT Professional</p>
     </footer>
 
     <script src="script.js"></script>

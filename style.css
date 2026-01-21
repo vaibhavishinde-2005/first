@@ -1,17 +1,41 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    margin: 0;
-    background: #f0f2f5;
+    background: #f4f5fb;
+    color: #333;
 }
 
-/* Hero Section */
+/* NAVBAR */
+nav {
+    background: linear-gradient(90deg, #3f51b5, #673ab7);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
 .hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #1e88e5, #6ab7ff);
+    height: 90vh;
+    background: linear-gradient(135deg, #3f51b5, #9c27b0);
     color: white;
     display: flex;
     flex-direction: column;
@@ -20,18 +44,17 @@ body {
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.hero span {
+    color: #ffcccb;
 }
 
 .hero button {
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 12px 30px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     background: white;
-    color: #1e88e5;
+    color: #673ab7;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -41,67 +64,69 @@ body {
     transform: scale(1.1);
 }
 
-/* Card Sections */
+/* CARDS */
 .card {
     max-width: 900px;
     margin: 40px auto;
     background: white;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    animation: fadeIn 1s ease;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
 .card h2 {
-    color: #1e88e5;
+    color: #3f51b5;
     margin-bottom: 15px;
 }
 
-/* Skills */
-.skills {
+/* SKILLS */
+.skill-box {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.skills span {
-    background: #1e88e5;
+.skill-box span {
+    background: linear-gradient(45deg, #3f51b5, #673ab7);
     color: white;
-    padding: 8px 15px;
+    padding: 8px 16px;
     border-radius: 20px;
-    font-size: 14px;
 }
 
-/* Contact */
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #f4f5fb;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project:hover {
+    background: #e8eaf6;
+    transform: translateY(-5px);
+}
+
+/* CONTACT */
 .contact button {
-    padding: 10px 20px;
-    background: #1e88e5;
+    padding: 10px 25px;
+    background: #3f51b5;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.contact button:hover {
-    background: #1565c0;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
-    text-align: center;
-    padding: 15px;
     background: #222;
     color: white;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    text-align: center;
+    padding: 15px;
 }

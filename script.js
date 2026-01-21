@@ -1,9 +1,9 @@
 function showMessage() {
     document.getElementById("msg").innerText =
-        "Thank you for visiting my portfolio! 😊";
+        "Thank you for reaching out! 😊";
 }
 
-function scrollToSection() {
+function scrollDown() {
     document.getElementById("about").scrollIntoView({
         behavior: "smooth"
     });
