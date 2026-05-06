@@ -24,7 +24,7 @@ A simple responsive website created using HTML, CSS, and JavaScript.
 
 # 📸 Preview
 
-(Add Screenshot Here)
+
 
 <img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/51e29eb5-f722-4590-8852-15329db6ad3c" />
 
